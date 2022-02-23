@@ -1,0 +1,21 @@
+import random
+# 🚨 Don't change the code below 👇
+test_seed = int(input("Create a seed number: "))
+random.seed(test_seed)
+
+# Split string method
+#names_string is a variable for given names
+names_string = input("Give me everybody's names, separated by a comma. ")
+#names is the list genered from names given
+names = names_string.split(", ")
+# 🚨 Don't change the code above 👆
+#Write your code below this line 👇 
+
+#Get the total number of items in list
+num_items = len(names)
+#Uses random.randint to generate random item in list from "num_items"
+random_choice = random.randint(0,num_items - 1)
+#Uses random item list from "num_items" from "names" with a variable assigned
+person_paying = names[random_choice]
+#Prints output
+print(person_paying + " is going to buy the meal today! ")
